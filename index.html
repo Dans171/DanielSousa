@@ -22,6 +22,23 @@
             <a href="#portfolioTop" class="header"><h3>PORTFOLIO</h3></a>
             <a href="#moreTop" class="header"><h3>MORE EXPERIENCE</h3></a>
         </nav>
+
+        <script defer>
+            let lastScroll = window.pageYOffset;
+
+            window.onscroll = function() {
+                let header = document.getElementsByTagName("header")[0];
+                let currentScroll = window.pageYOffset;
+
+                if(currentScroll > lastScroll) {
+                    header.setAttribute("style", "transform: translateY(-50%); transition: 0.5s;");
+                } else {
+                    header.setAttribute("style", "transform: translateY(0%); transition: 0.5s;");
+                }
+
+                lastScroll = currentScroll;
+            };
+        </script>
     </header>
 
     <main>
@@ -207,34 +224,34 @@
 
             <div class="portfolioContent">
                 <h4>Wristbot Games (In Development)</h4>
-                <video controls poster="img/carScreenshot2.jpg" width="450" height="255">
+                <video controls poster="img/carScreenshot.png" title="Car Gameplay Video" width="432" height="243">
                     <source src="img/carGameplay.mp4">
                 </video>
             </div>
 
             <div class="portfolioContent">
-                <video controls poster="img/carScreenshot2.jpg" width="450" height="255">
-                    <source src="img/carGameplay.mp4">
+                <video controls poster="img/balanceScreenshot.png" title="Balance Gameplay Video" width="432" height="243">
+                    <source src="img/balanceGameplay.mp4">
                 </video>
             </div>
 
             <div class="portfolioContent">
-                <video controls poster="img/carScreenshot2.jpg" width="450" height="255">
-                    <source src="img/carGameplay.mp4">
+                <video controls poster="img/fireScreenshot.png" title="Fire Gameplay Video" width="432" height="243">
+                    <source src="img/fireGameplay.mp4">
                 </video>
             </div>
 
             <br>
 
             <div class="portfolioContent">
-                <video controls poster="img/carScreenshot2.jpg" width="450" height="255">
-                    <source src="img/carGameplay.mp4">
+                <video controls poster="img/marbleScreenshot.png" title="Marble Gameplay Video" width="432" height="243">
+                    <source src="img/marbleGameplay.mp4">
                 </video>
             </div>
 
             <div class="portfolioContent">
-                <video controls poster="img/carScreenshot2.jpg" width="450" height="255">
-                    <source src="img/carGameplay.mp4">
+                <video controls poster="img/planeScreenshot.png" title="Plane Gameplay Video" width="432" height="243">
+                    <source src="img/planeGameplay.mp4">
                 </video>
             </div>
 
@@ -242,57 +259,64 @@
 
             <div class="portfolioContent">
                 <h4>Corona Run</h4>
-                <iframe width="450" height="255" style="border:none;" title="Corona Run Youtube Video" allowfullscreen
+                <iframe width="432" height="243" style="border:none;" title="Corona Run Youtube Video" allowfullscreen
                     src="https://www.youtube.com/embed/hlcdfn9nheY?start=369">
                 </iframe>
-            </div>
-
-            <div class="portfolioContent">
-                <h4>VR Biking Shooter</h4>
-                <video controls poster="img/bikeVRScreenshot.png" width="450" height="255">
-                    <source src="img/vrBikeGameplay.mp4">
-                </video>
             </div>
 
             <br>
 
             <div class="portfolioContent">
+                <h4>VR Biking Shooter</h4>
+                <video controls poster="img/bikeVRScreenshot.png" title="VR Biking Shooter Gameplay Video" width="432" height="243">
+                    <source src="img/vrBikeGameplay.mp4">
+                </video>
+            </div>
+
+            <div class="portfolioContent">
                 <h4>AR Text Rain</h4>
-                <video controls poster="img/textRainScreenshot.jpg" width="450" height="255">
+                <video controls poster="img/textRainScreenshot.jpg" title="AR Text Rain Example Video" width="432" height="243">
                     <source src="img/textRainGameplay.mp4">
                 </video>
             </div>
 
             <h3>Game Jams</h3>
 
+            <div id="award">
+                <img src="img/award.png" alt="Award Icon"/>
+                <h4>Awarded <a href="https://ldjam.com/events/ludum-dare/47/line-of-attack" target="_blank">34th place</a>
+                    <br>out of <a href="https://ldjam.com/events/ludum-dare/47/stats" target="_blank">2,406 jam games</a>
+                    <br>in the Innovation category*
+                </h4>
+            </div>
             <div class="portfolioContent">
-                <h4>Ludum Dare 47 - <a href="https://dans17.itch.io/line-of-attack" target="_blank">Line of Attack</a></h4>
-                <h4>Awarded <a href="https://ldjam.com/events/ludum-dare/47/line-of-attack" target="_blank">34th place</a> out of <a href="https://ldjam.com/events/ludum-dare/47/stats" target="_blank">2,406 jam games</a> in the Innovation category</h4>
-                <a href="https://dans17.itch.io/line-of-attack" target="_blank"><img src="img/lineOfAttack.png" alt="Line of Attack" width="450" height="255"/></a>
+                <h4>*Ludum Dare 47 - <a href="https://dans17.itch.io/line-of-attack" target="_blank">Line of Attack</a></h4>
+                <a href="https://dans17.itch.io/line-of-attack" target="_blank"><img src="img/lineOfAttack.png" alt="Line of Attack" width="432" height="243"/></a>
             </div>
 
             <div class="portfolioContent">
                 <h4>Ludum Dare 45 - <a href="https://ldjam.com/events/ludum-dare/45/the-tale-of-earl" target="_blank">The Tale of Earl</a></h4>
-                <a href="https://ldjam.com/events/ludum-dare/45/the-tale-of-earl" target="_blank"><img src="img/taleOfEarl.png" alt="The Tale of Earl" width="450" height="255"/></a>
+                <a href="https://ldjam.com/events/ludum-dare/45/the-tale-of-earl" target="_blank"><img src="img/taleOfEarl.png" alt="The Tale of Earl" width="432" height="243"/></a>
             </div>
 
             <br>
 
             <div class="portfolioContent">
                 <h4>Ludum Dare 31 - <a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=22050" target="_blank">The Nth Dimension</a></h4>
-                <a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=22050" target="_blank"><img src="img/nthDimension.jpg" alt="The Nth Dimension" width="450" height="255"/></a>
+                <a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=22050" target="_blank"><img src="img/nthDimension.jpg" alt="The Nth Dimension" width="432" height="243"/></a>
             </div>
 
             <div class="portfolioContent">
                 <h4>Ludum Dare 30 - <a href="http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=22050" target="_blank">Into the Shadows</a></h4>
-                <a href="http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=22050" target="_blank"><img src="img/intoTheShadows.jpg" alt="Into the Shadows" width="450" height="255"/></a>
+                <a href="http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=22050" target="_blank"><img src="img/intoTheShadows.jpg" alt="Into the Shadows" width="432" height="243"/></a>
             </div>
 
             <div class="portfolioContent">
                 <h4>Ludum Dare 29 - <a href="http://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=22050" target="_blank">Heart of the Earth</a></h4>
-                <a href="http://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=22050" target="_blank"><img src="img/heartOfTheEarth.jpg" alt="Heart of the Earth" width="450" height="255"/></a>
+                <a href="http://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=22050" target="_blank"><img src="img/heartOfTheEarth.jpg" alt="Heart of the Earth" width="432" height="243"/></a>
             </div>
 
+            <!--
             <h3>Ludum Dare 47 - <a href="https://dans17.itch.io/line-of-attack" target="_blank">Line of Attack</a></h3>
             <h4>Awarded <a href="https://ldjam.com/events/ludum-dare/47/line-of-attack" target="_blank">34th place</a> out of <a href="https://ldjam.com/events/ludum-dare/47/stats" target="_blank">2,406 jam games</a> in the Innovation category</h4>
             <a href="https://dans17.itch.io/line-of-attack" target="_blank"><img src="img/lineOfAttack.png" alt="Line of Attack" width="927"/></a>
@@ -311,6 +335,7 @@
 
             <h3>Ludum Dare 29 - <a href="http://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=22050" target="_blank">Heart of the Earth</a></h3>
             <a href="http://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=22050" target="_blank"><img src="img/heartOfTheEarth.jpg" alt="Heart of the Earth" width="927"/></a>
+            -->
         </section>
 
         <br>
@@ -332,7 +357,7 @@
     </main>
 
     <footer>
-        <p>Copyright © Daniel Sousa 2020</p>
+        <p>Copyright © Daniel Sousa 2021</p>
     </footer>
 
 </div><!-- END OF WRAPPER -->
