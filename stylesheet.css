@@ -4,7 +4,7 @@ html {
 body {
     #font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
-    background: #182841;
+    background: white;
 }
 h1, h2, h3, h4 {
     font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -40,6 +40,9 @@ footer {
 main {
     background-color: white;
     padding: 175px 0 20px 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 ul {
     text-align: left;
@@ -167,12 +170,15 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
 }
 #award {
     position: relative;
-    width: 400px;
-    margin: 5px auto 0 auto;
+    width: 432px;
+    margin: 1px 0;
     padding: 1px 0;
     color: white;
     background-color: #182841;
-    border-radius: 100px;
+}
+#award h4 {
+    text-align: center;
+    font-size: 14px;
 }
 #education img {
     position: absolute;
@@ -197,8 +203,8 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
 }
 #award img {
     position: absolute;
-    left: 30px;
-    top: 30px;
+    left: 10px;
+    top: 15px;
     width: 40px;
     height: 40px;
 }
