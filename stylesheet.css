@@ -73,9 +73,6 @@ nav a:hover {
     padding-bottom: 0;
     color: #71a2ca;
 }
-a h1:hover {
-    color: #71a2ca;
-}
 h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
     color: aqua;
     border-color: aqua;
@@ -147,7 +144,7 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
 .anchor {
     display: block;
     position: relative;
-    top: -100px;
+    top: -90px;
     visibility: hidden;
     margin: 80px auto;
 }
@@ -160,6 +157,9 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
     color: black;
     font-size: 18px;
     width: 450px;
+}
+#portfolio h3 {
+    margin-top: 60px;
 }
 #education, #skills, #more {
     position: relative;
@@ -214,4 +214,10 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
 #languages {
     text-align: left;
     margin-left: 100px;
+}
+#name {
+    position: absolute;
+    left: 10px;
+    top: -124px;
+
 }

@@ -14,8 +14,9 @@
 
 <div class="wrapper">
     <header>
-        <a href="#top" class="header"><h1>DANIEL SOUSA</h1></a>
+        <h1 class="header">DANIEL SOUSA</h1>
         <nav>
+            <a href="#top" class="header" id="name" onmouseover="removeTransition()"><h3>DANIEL SOUSA</h3></a>
             <a href="#educationTop" class="header"><h3>EDUCATION</h3></a>
             <a href="#workTop" class="header"><h3>WORK EXPERIENCE</h3></a>
             <a href="#skillsTop" class="header"><h3>SKILLS</h3></a>
@@ -24,20 +25,23 @@
         </nav>
 
         <script defer>
-            let lastScroll = window.pageYOffset;
+            let name = document.getElementById("name");
 
-            window.onscroll = function() {
+            document.addEventListener("scroll", (evt) => {
                 let header = document.getElementsByTagName("header")[0];
-                let currentScroll = window.pageYOffset;
 
-                if(currentScroll > lastScroll) {
-                    header.setAttribute("style", "transform: translateY(-50%); transition: 0.5s;");
-                } else {
+                if(window.pageYOffset > 80) {
+                    header.setAttribute("style", "transform: translateY(-55%); transition: 0.5s;");
+                    name.setAttribute("style", "transform: translateY(200px); transition: 0.3s;");
+                } else if(window.pageYOffset <= 80) {
                     header.setAttribute("style", "transform: translateY(0%); transition: 0.5s;");
+                    name.setAttribute("style", "transform: translateY(-200px); transition: 0.3s;");
                 }
+            });
 
-                lastScroll = currentScroll;
-            };
+            function removeTransition() {
+                name.style.transition = "0s";
+            }
         </script>
     </header>
 
@@ -351,6 +355,8 @@
             </ul>
             <br>
         </section>
+
+        <br><br>
 
     </main>
 
