@@ -68,9 +68,9 @@ h3 a:hover, a h4:hover, h4 a:hover {
     text-decoration: underline;
 }
 nav a:hover {
-    border: 4px solid #71a2ca;
-    padding: 0 16px 0 16px;
-    margin-bottom: 4px;
+    border-bottom: 4px solid #71a2ca;
+    margin-bottom: -4px;
+    padding-bottom: 0;
     color: #71a2ca;
 }
 a h1:hover {
@@ -147,13 +147,15 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
 .anchor {
     display: block;
     position: relative;
-    top: -130px;
+    top: -100px;
     visibility: hidden;
+    margin: 80px auto;
 }
 .portfolioContent {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     text-align: left;
     color: black;
     font-size: 18px;
@@ -179,6 +181,7 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
 #award h4 {
     text-align: center;
     font-size: 14px;
+    margin: 8px;
 }
 #education img {
     position: absolute;
@@ -203,10 +206,10 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
 }
 #award img {
     position: absolute;
-    left: 10px;
-    top: 15px;
-    width: 40px;
-    height: 40px;
+    left: 15px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
 }
 #languages {
     text-align: left;
