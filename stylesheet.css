@@ -73,7 +73,7 @@ nav a:hover {
     padding-bottom: 0;
     color: #71a2ca;
 }
-h3 a:active, a h4:active, h4 a:active, nav a:active, a h1:active {
+h3 a:active, a h4:active, h4 a:active, nav a:active {
     color: aqua;
     border-color: aqua;
 }

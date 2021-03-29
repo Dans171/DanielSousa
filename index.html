@@ -32,10 +32,14 @@
 
                 if(window.pageYOffset > 80) {
                     header.setAttribute("style", "transform: translateY(-55%); transition: 0.5s;");
-                    name.setAttribute("style", "transform: translateY(200px); transition: 0.3s;");
+                    if (window.screen.width >= 1500) {
+                        name.setAttribute("style", "transform: translateY(200px); transition: 0.3s;");
+                    }
                 } else if(window.pageYOffset <= 80) {
                     header.setAttribute("style", "transform: translateY(0%); transition: 0.5s;");
-                    name.setAttribute("style", "transform: translateY(-200px); transition: 0.3s;");
+                    if (window.screen.width >= 1500) {
+                        name.setAttribute("style", "transform: translateY(-200px); transition: 0.3s;");
+                    }
                 }
             });
 
