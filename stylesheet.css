@@ -59,11 +59,11 @@ table tr {
 table tr td {
     width: 300px;
 }
-h3 a, a h4, h4 a {
+h3 a, a h4, h4 a, p a {
     color: #71a2ca;
     text-decoration: none;
 }
-h3 a:hover, a h4:hover, h4 a:hover {
+h3 a:hover, a h4:hover, h4 a:hover, p a:hover {
     color: #71a2ca;
     text-decoration: underline;
 }
@@ -73,7 +73,7 @@ nav a:hover {
     padding-bottom: 0;
     color: #71a2ca;
 }
-h3 a:active, a h4:active, h4 a:active, nav a:active {
+h3 a:active, a h4:active, h4 a:active, nav a:active, p a:active {
     color: aqua;
     border-color: aqua;
 }
