@@ -97,6 +97,16 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, p a:active, li a:active {
     display: inline-block;
     padding: 0 50px 0 50px;
 }
+.contact a img {
+    display: block;
+    float: left;
+    padding: 15px 5px 0 0;
+}
+.contact a h4 {
+    display: block;
+    float: right;
+    vertical-align: middle;
+}
 .job {
     display: inline-block;
     position: relative;
