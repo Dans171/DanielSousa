@@ -230,6 +230,8 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, p a:active, li a:active {
     left: 10px;
     top: -124px;
 }
-.desc li {
-    font-size: 14px;
-}
+/*@media only screen and (max-device-width: 480px) {
+    .desc li {
+        font-size: 14px;
+    }
+}*/
