@@ -168,6 +168,16 @@ h3 a:active, a h4:active, h4 a:active, nav a:active, p a:active, li a:active {
     font-size: 18px;
     width: 450px;
 }
+.portfolioDescription {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    width: 900px;
+}
 #portfolio h3 {
     margin-top: 60px;
 }
